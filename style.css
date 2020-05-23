@@ -5,8 +5,9 @@
   background-color: #ffbf2a
 }
 li{
-  display: block;
-  padding: 8px;
+  display: inline;
+  padding: 8%;
+  font-size: 150%
 }
 * {
   box-sizing: border-box;

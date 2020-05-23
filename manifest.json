@@ -1,27 +1,15 @@
 {
-  "name": "Hello Extensions",
-  "description" : "Base Level Extension",
+  "manifest_version": 2,
+
+  "name": "PP",
+  "description": "This extension will analyze productivity using PP",
   "version": "1.0",
 
   "browser_action": {
-    "default_popup": "hello.html",
-    "default_icon": "small_hack_logo.png"
+   "default_icon": "small_hack_logo.png",
+   "default_popup": "popup.html"
   },
-
-// we need to have permission to access the activeTab
   "permissions": [
    "activeTab"
    ]
-
-  "manifest_version": 2,
-
- "commands": {
-    "_execute_browser_action": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+F",
-        "mac": "MacCtrl+Shift+F"
-      }
-      "description": "Opens hello.html"
-    }
-  }
 }
