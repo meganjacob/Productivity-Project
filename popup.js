@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function()
       d = document;
 
       var f = d.createElement('form');
-      f.action = 'https://www.youtube.com/'; // site url HERE
+      f.action = 'http://gtmetrix.com/analyze.html?bm'; // site url HERE
       f.method = 'post';
       var i = d.createElement('input');
       i.type = 'hidden';

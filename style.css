@@ -24,3 +24,10 @@ li{
   display: table;
   clear: both;
 }
+.icon{
+	width: 90%;
+  height:90%;
+  margin: auto;
+  text-align: center;
+  display: block;
+}
