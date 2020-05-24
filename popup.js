@@ -1,5 +1,5 @@
 //class Schedule {
-
+/**
 function mainB() {  
     var time = prompt("How much time do you want to be working to the nearest minute?");
     //var sched = planWork();
@@ -64,3 +64,4 @@ function mainB() {
 document.getElementById("button").addEventListener('click', mainB());
 //}
 }
+*/
