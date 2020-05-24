@@ -63,11 +63,9 @@
   display: block;
 }
 .section_about{
-  width: 75%;
-  background-color: #d1faff;
-  font-size: 200%;
-  padding: 2%;
-  margin: 12%;
+  text-align: center;
+  font-size: 150%;
+  padding: 7%;
 }
 .download-button{
   width: 60%;
@@ -128,7 +126,7 @@
 }
 .title{
   font-size: 500%;
-  background-color: #d1faff;
+  background-color: #9bd1e5;
   padding: 8%;
   text-align: center;
 }
