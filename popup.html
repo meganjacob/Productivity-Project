@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>PP Project Analyzer</title>
+	<title>PP Project</title>
 	<script src="popup.js"></script>
 	<script src="timer.js"></script>
 
@@ -23,12 +23,11 @@
 <!-- onload function is evoke when page is load -->
 <!--countdown function is called when page is loaded -->
 
-<body onload="countdown()">
-	<button type="button" onclick="mainB()">Start Work Session</button>
+<body>
+	<button id="button">Start Work Session</button>
   <!--the above button will have an alert on it in a js file which asks how much time
   the user wants to work for. Then, display the work schedule and ask for approval (in another alert box?). Then display the chosen schedule on the GUI with the time left for the section (work or break) that they are on -->
-  <p id="checkpage"></p>
-  <h3>Time Left:</h3>
+  <p id="emptyP"> </p>
 	<div>
 		Time Left ::
 		<input id="minutes" type="text" style="width: 10px; border: none; font-size: 16px;  font-weight: bold; color: black;">
