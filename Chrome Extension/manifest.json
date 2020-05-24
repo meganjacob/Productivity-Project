@@ -1,4 +1,21 @@
 {
+  "name": "PP Project",
+  "version": "1.0",
+  "description": "Productivity and Self Care",
+  "manifest_version": 2,
+  "incognito": "split", // make sure to run during incognito
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "128": "small_hack_logo.png"
+  }
+}
+/**{
+
   "manifest_version": 2,
 
   "name": "PP",
@@ -13,3 +30,4 @@
    "activeTab"
    ]
 }
+*/

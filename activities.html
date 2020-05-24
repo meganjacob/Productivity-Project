@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>PP Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <a name="home"></a>
+    <div class = "navbar">
+        <img src="Photos/Logo.png" class="logo"> 
+        <h1>Name</h1>
+        <a href="contact">Contact</a> 
+        <a href="download">Download</a>
+        <a href="#about">About</a>
+        <a href="index.html">Home</a>
+    </div>
+
+    <div class="title">
+      <p>Activities</p>
+    </div>
+
+  <div class = "checkboxes">
+    <label for="excerpts">Reading</label> 
+    <input type="checkbox" id="excerpts" onclick="checkRead()">
+    
+
+    <label for="videos">YouTube</label> 
+    <input type="checkbox" id="videos" onclick="checkYT()">
+    
+
+    <label for="songs">Music</label> 
+    <input type="checkbox" id="songs" onclick="checkSong()">
+    
+
+    <label for="games">Games</label> 
+    <input type="checkbox" id="games" onclick="checkGame()">
+    
+
+    <label for="workouts">Workouts</label> 
+    <input type="checkbox" id="workouts" onclick="checkWorkOut()">
+    
+    <p id="reading" style="display:none">insert readings</p>
+    <p id="v" style="display:none">insert youtube vid</p>
+    <p id="s" style="display:none">insert songs</p>
+    <p id="g" style="display:none">insert games</p>
+    <p id="w" style="display:none">insert workouts</p>
+  </div>
+    <script>
+      function checkRead() {
+        var read = document.getElementById("excerpts");
+        var a = document.getElementById("reading");
+
+        if (read.checked == true){
+          a.style.display = "block";
+        }
+        else {
+          a.style.display = "none";
+        }
+      }
+
+      function checkYT() {
+        var vid = document.getElementById("videos");
+        var b = document.getElementById("v");
+
+        if (vid.checked == true){
+          b.style.display = "block";
+        }
+        else {
+          b.style.display = "none";
+        }
+      }
+
+      function checkSong() {
+        var song = document.getElementById("songs");
+        var c = document.getElementById("s");
+
+        if (song.checked == true){
+          c.style.display = "block";
+        }
+        else {
+          c.style.display = "none";
+        }
+      }
+
+      function checkGame() {
+        var game = document.getElementById("games");
+        var d = document.getElementById("g");
+
+        if (game.checked == true){
+          d.style.display = "block";
+        }
+        else {
+          d.style.display = "none";
+        }
+      }
+
+       function checkWorkOut() {
+        var workout = document.getElementById("workouts");
+        var e = document.getElementById("w");
+
+        if (workout.checked == true){
+          e.style.display = "block";
+        }
+        else {
+          e.style.display = "none";
+        }
+      }
+
+
+    </script>
+  </body>
+</html>

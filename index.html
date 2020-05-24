@@ -7,22 +7,65 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="script.js"></script>
     <a name="home"></a>
     <div class = "navbar">
         <img src="Photos/Logo.png" class="logo"> 
         <h1>Name</h1>
-        <a href="contact">Contact</a> 
-        <a href="download">Download</a>
+        <a href="#contact">Contact</a> 
+        <a href="#download">Download</a>
         <a href="#about">About</a>
-        <a href="#home">Home</a>
+        <a href="index.html">Home</a>
     </div>
 
-    <br>
-    <br>
-    <div class="row">
+<div class="slideshow">
+
+  <div class="mySlides fade">
+    <img src="Photos/slide1.jpg" style="width:100%">
+  </div>
+
+    <div class="mySlides fade">
+      <img src="Photos/slide2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="Photos/slide3.jpg" style="width:100%">
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 6000); // Change image every 2 seconds
+}
+</script>
+
+
+  <div class="row">
   <div class="column" style="background-color:#83B0CA;">
-	<img class="icon" src="Photos/About_Circle.png"/>
+	<img class="iconCircle" src="Photos/About_Circle.png"/>
     <h2>The Problem</h2>
     <p>Because of COVID-19 people are becoming forced to work from home and now some people are adopting that permanently.</p>
   </div>
@@ -39,14 +82,21 @@
   </div>
 </div>
 
-<a name="about"></a>
+
+<div class = "title"><a name="about">About</a></div>
 <div class="section_about">
   <p>
     Computer extension to track productivity. You indicate if you are working, and it tracks whether or not you are researching, opening closing pages, clicking on stuff, scrolling on websites, etc. If you are slowing down in productivity (studies show after 30 min), it prompts you to do something else. It will offer a variety of options such as fresh memes, trending tweets, stress-relieving games (that even collaborate with other people), short workouts, and recommendations such as going on a walk (based on your location, weather, etc.), going to rest, munch on something, etc.. The recommendations are meant to be fun, make you smile, and leave you refreshed to start working again after at least 5 minutes. The recommendations are also customized to you and your interests (which you enter in a form). After your break period, the program asks you how you feel, and it might extend your break.  The goal is to prevent wasting time, increasing productivity, and working smarter not harder.
 
   You let the program know your goals. You specify how much time you want to work on something, and whether or not it is work. If it is work, it will remind you to stay on task when you access social media (FB, twitter, insta, TikTok, pinterest), Netflix, Youtube, etc. 
-
 </p>
 </div>
+<a name="download"></a>
+<button class="download-button"><a class="download-link" href="https://www.google.com/">Download</a></button>
+
+<div class="footer">
+  <a href="activities.html" class="footer-text">Link to activities</a>
+</div>
+
   </body>
 </html>
